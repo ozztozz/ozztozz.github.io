@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porto - Tailwind Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"
+        integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="bg-gray-100">
+
+
+    <nav
+        class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="images/logo.svg" class="h-8" alt="Fk Logo">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">FK Alpha
+                    Academy</span>
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                            aria-current="page">Anasayfa</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Hakkimizda</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Iletisim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div
+        class="fixed bottom-0 left-0 z-50 w-full h-16 bg-white border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600">
+        <div class="grid h-full max-w-lg grid-cols-5 mx-auto font-medium">
+            <button type="button"
+                class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                <svg class="w-5 h-5 mb-2 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500"
+                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                        d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z" />
+                </svg>
+                <span
+                    class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">Anasayfa</span>
+            </button>
+
+
+            <button type="button"
+                class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                <svg class="w-5 h-5 mb-2 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500"
+                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                        d="M11.074 4 8.442.408A.95.95 0 0 0 7.014.254L2.926 4h8.148ZM9 13v-1a4 4 0 0 1 4-4h6V6a1 1 0 0 0-1-1H1a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h17a1 1 0 0 0 1-1v-2h-6a4 4 0 0 1-4-4Z" />
+                    <path
+                        d="M19 10h-6a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1Zm-4.5 3.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2ZM12.62 4h2.78L12.539.41a1.086 1.086 0 1 0-1.7 1.352L12.62 4Z" />
+                </svg>
+                <span
+                    class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">Blog</span>
+            </button>
+
+            <button type="button"
+                class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                <img src="images/logo.svg" class="h-8" alt="Fk Logo">
+
+            </button>
+
+            <button type="button"
+                class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                <svg class="w-5 h-5 mb-2 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500"
+                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 12.25V1m0 11.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M4 19v-2.25m6-13.5V1m0 2.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M10 19V7.75m6 4.5V1m0 11.25a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5ZM16 19v-2" />
+                </svg>
+                <span
+                    class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">Iletisim</span>
+            </button>
+            <button type="button"
+                class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                <svg class="w-5 h-5 mb-2 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500"
+                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                        d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z" />
+                </svg>
+                <span
+                    class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">Blog</span>
+            </button>
+        </div>
+    </div>
+
+    <section class="py-12 md:py-12">
+
+        <div class="container max-w-screen-xl mx-auto px-4 text-center">
+
+
+            <div class="flex justify-center pt-16 mb-16">
+                <img src="images/logo.svg" alt="Image" class="max-h-60 hover:animate-pulse">
+            </div>
+            <h1 class="font-normal  text-gray-900 text-4xl md:text-7xl leading-none mb-8 ">
+                FK Alpha Academy Spor Kulubu
+            </h1>
+
+            <p class="font-normal text-gray-700 text-md md:text-xl ">
+                Amacımiz sedanter spor sevdalılarının ve alfa çağındaki yüzücülerin hayallerine, hedeflerine ve
+                başarılarına rehber olmaktır.</p>
+        </div>
+
+    </section>
+
+
+
+    <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/images/1.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="images/2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/images/3.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="images/9.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="...">
+            </div>
+
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                data-carousel-slide-to="4"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 1 1 5l4 4" />
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 9 4-4-4-4" />
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
+
+
+    <section class="">
+
+        <div class="container max-w-screen-xl mx-auto px-4 py-6">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class=" bg-gray-50 px-8 py-10 rounded-md hover:bg-gray-200">
+                    <div class="w-20 py-6 flex justify-end  mb-4">
+                        <img src="images/logotrans.png" alt="Image" class="max-h-16 ">
+                    </div>
+
+                    <h4 class="font-medium text-black text-lg mb-4">Deneyim</h4>
+
+                    <p class="font-normal text-black text-md">Lorem ipsum dolor sit amet, consectetur <br>
+                        adipiscing
+                        elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+
+                <div class=" bg-gray-50 px-8 py-10 rounded-md hover:bg-gray-200"">
+                    <div class=" w-20 py-6 flex justify-center rounded-md mb-4">
+                    <img src="images/logotrans.png" alt="Image" class="max-h-16">
+                </div>
+
+                <h4 class="font-medium text-black text-lg mb-4">Yuzme</h4>
+
+                <p class="font-normal text-black  text-md">Lorem ipsum dolor sit amet, consectetur <br> adipiscing
+                    elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class=" bg-gray-50 px-8 py-10 rounded-md hover:bg-gray-200"">
+                    <div class=" w-20 py-6 flex justify-center rounded-md mb-4">
+                <img src="images/logotrans.png" alt="Image" class="max-h-16 ">
+            </div>
+
+            <h4 class="font-medium text-black text-lg mb-4">Basari</h4>
+
+            <p class="font-normal text-black text-md">Lorem ipsum dolor sit amet, consectetur <br> adipiscing
+                elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        </div>
+
+        </div>
+
+    </section>
+
+    <section class="py-10 md:py-16">
+
+        <div class="container max-w-screen-xl mx-auto px-4">
+
+            <div class="flex flex-col lg:flex-row justify-between">
+                <div class="mb-10 lg:mb-0">
+                    <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">Kadromuz</h1>
+
+                    <p class="font-normal text-gray-500 text-xs md:text-base">KADRO SLOGAN <br> as a professional.</p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="flex space-x-6">
+                        <div class="w-20 py-6  justify-center bg-gray-100 rounded-md mb-4">
+                            <img src="images/fk.1.PNG" alt="Image" class="rounded-full hover:animate-pulse ">
+                        </div>
+
+                        <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
+
+                        <div>
+                            <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">Fatih Karakurt</h1>
+
+                            <p class="font-normal text-gray-500 text-sm md:text-base">NATIONAL ATHLETE FINSWIMMING <br>
+                                GAÜN BESYO <br>
+                                EPÖ(YÜKSEK LİSANS) <br>
+                                YÜZME ANTRENÖRÜ🇹🇷(NATIONAL COACH) <br>
+                                BEDEN EĞİTİMİ VE SPOR ÖĞRETMENİ <br>
+                        </div>
+                    </div>
+                    <div class="flex space-x-6">
+                        <div class="w-20 py-6  justify-center bg-gray-100 rounded-md mb-4">
+                            <img src="images/fk.1.PNG" alt="Image" class="rounded-full hover:animate-pulse ">
+                        </div>
+
+                        <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
+
+                        <div>
+                            <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">Fatih Karakurt</h1>
+
+                            <p class="font-normal text-gray-500 text-sm md:text-base">NATIONAL ATHLETE FINSWIMMING <br>
+                                GAÜN BESYO <br>
+                                EPÖ(YÜKSEK LİSANS) <br>
+                                YÜZME ANTRENÖRÜ🇹🇷(NATIONAL COACH) <br>
+                                BEDEN EĞİTİMİ VE SPOR ÖĞRETMENİ <br>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <footer class="bg-black text-gray-400">
+        <!--Footer content-->
+        <div id="footer-content" class="relative pt-8 xl:pt-16 pb-6 xl:pb-12">
+            <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2 overflow-hidden">
+                <div class="flex flex-wrap flex-row lg:justify-between -mx-3">
+                    <div class="flex-shrink max-w-full w-full lg:w-2/5 px-3 lg:pr-16">
+                        <div class="flex items-center mb-2">
+                            <span class="text-3xl leading-normal mb-2 font-bold text-gray-100 mt-2">Fk Alpha
+                                Academy</span>
+                            <!-- <img src="src/img-min/logo.png" alt="LOGO"> -->
+                        </div>
+                        <ul class="space-x-3 mt-6 mb-6 Lg:mb-0">
+                            <!--instagram-->
+                            <li class="inline-block">
+                                <a target="_blank" class="hover:text-gray-100" rel="noopener noreferrer"
+                                    href="https://www.instagram.com/fkalphaacademy/" title="Instagram">
+                                    <!-- <i class="fab fa-instagram fa-2x"></i> -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem"
+                                        viewBox="0 0 512 512">
+                                        <path fill="currentColor"
+                                            d="M349.33,69.33a93.62,93.62,0,0,1,93.34,93.34V349.33a93.62,93.62,0,0,1-93.34,93.34H162.67a93.62,93.62,0,0,1-93.34-93.34V162.67a93.62,93.62,0,0,1,93.34-93.34H349.33m0-37.33H162.67C90.8,32,32,90.8,32,162.67V349.33C32,421.2,90.8,480,162.67,480H349.33C421.2,480,480,421.2,480,349.33V162.67C480,90.8,421.2,32,349.33,32Z">
+                                        </path>
+                                        <path fill="currentColor"
+                                            d="M377.33,162.67a28,28,0,1,1,28-28A27.94,27.94,0,0,1,377.33,162.67Z">
+                                        </path>
+                                        <path fill="currentColor"
+                                            d="M256,181.33A74.67,74.67,0,1,1,181.33,256,74.75,74.75,0,0,1,256,181.33M256,144A112,112,0,1,0,368,256,112,112,0,0,0,256,144Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li><!--end instagram-->
+                            <!--twitter-->
+                            <li class="inline-block">
+                                <a target="_blank" class="hover:text-gray-100" rel="noopener noreferrer"
+                                    href="https://wa.me/905302442670">
+                                    <i class="fa fa-whatsapp" style="font-size:48px;color:green"></i>
+                                </a>
+
+                            </li>
+                            <!--youtube-->
+                            <li class="inline-block">
+                                <a target="_blank" class="hover:text-gray-100" rel="noopener noreferrer"
+                                    href="https://youtube.com" title="Youtube">
+                                    <!-- <i class="fab fa-youtube fa-2x"></i> -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem"
+                                        viewBox="0 0 512 512">
+                                        <path fill="currentColor"
+                                            d="M508.64,148.79c0-45-33.1-81.2-74-81.2C379.24,65,322.74,64,265,64H247c-57.6,0-114.2,1-169.6,3.6-40.8,0-73.9,36.4-73.9,81.4C1,184.59-.06,220.19,0,255.79q-.15,53.4,3.4,106.9c0,45,33.1,81.5,73.9,81.5,58.2,2.7,117.9,3.9,178.6,3.8q91.2.3,178.6-3.8c40.9,0,74-36.5,74-81.5,2.4-35.7,3.5-71.3,3.4-107Q512.24,202.29,508.64,148.79ZM207,353.89V157.39l145,98.2Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Start footer copyright-->
+        <div class="footer-dark">
+            <div class="container py-4 border-t border-gray-200 border-opacity-10">
+                <div class="row">
+                    <div class="col-12 col-md text-center">
+                        <p class="d-block my-3">Copyright © Fk Alpha Academy | All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div><!--End footer copyright-->
+    </footer><!-- end footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+
+</html>
